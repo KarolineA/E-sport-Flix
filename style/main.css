@@ -1,0 +1,275 @@
+
+:root{
+    --red:#ff0000;
+    --dark:#141414;
+    --grey: #686868;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+
+body{
+    background:  var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--red);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:var(--grey);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #ffff
+
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0,.50)100%), url(/site-csgo/resources/img/principal.jpg);
+
+    height: 500px;
+    background-size:cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.titulo{
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*carrosel*/
+
+
+
+.box img {
+  transition: transform .3s;  
+}
+
+.box img:hover {
+  transition: transform .3s;
+  -ms-transform: scale(1.4);
+  -webkit-transform: scale(1.4);  
+  transform: scale(1.4);
+}
+
+.box img {
+  border-radius: 2px;
+}
+.carrosel-csgo{
+
+    margin-top: 5px;
+}
+
+.carrosel-csgo img {
+
+    height: 5%;
+    
+}
+
+.carrosel-lol{
+
+    margin-top: 5px;
+}
+
+.carrosel-lol img {
+
+    height: 5%;
+    
+}
+
+.carrosel-apex{
+
+    margin-top: 5px;
+}
+
+.carrosel-apex img {
+
+    height: 5%;
+    
+}
+
+.ano {
+    color: rgb(94, 247, 94);
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 8px;
+
+}
+
+.games { 
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+
+.games:hover {
+    color:rgb(190, 190, 190);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.item img{
+    width: 300px;
+    height: 300px;
+}
+
+.lol {
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.Apex {
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.csgo{
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+   /*links*/ 
+
+   .link {
+    padding: 50px;
+  }
+  
+  .sub-links ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .sub-links a {
+    color:var(--grey);
+    text-decoration: none;
+  }
+  
+  .sub-links a:hover {
+    color: var(--grey);
+    text-decoration: underline;
+  }
+  
+  .logos a{
+    padding: 10px;
+    color: var(--grey);
+    
+  }
+  .logos{
+      padding-bottom: 20px;
+  }
+
+  /*footer*/
+footer.container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        border-radius: 05px;
+        padding: 20px;
+        
+        font-family: "Arial Black",Times;
+}
+    
+footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--grey);
+    margin: 10px;
+    }
+
+
+    @media (max-width: 880px) {
+
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    
+        .footer-distributed .footer-center i{
+            margin-left: 0;
+        }
+    
+    }
