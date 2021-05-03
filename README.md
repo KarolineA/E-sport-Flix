@@ -1,1 +1,1 @@
-Um projeto feito com base num cover da interface da Netflix  que foi ensinado em uma das aulas da DIO.   
+Um projeto feito com base no cover da interface da Netflix que foi ensinado nas aulas da DIO.   
